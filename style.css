@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
     background: linear-gradient(135deg, #faf8f3 0%, #fff9f0 25%, #fffbf5 50%, #fff9f0 75%, #faf8f3 100%);
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
@@ -65,7 +65,7 @@ body::after {
 
 /* Header */
 .header {
-    background-image: url('https://github.com/hpypy/gioquatet/blob/7cdaf53222f5ec4528542074297de4671b3a73f5/tet-dong-day.jpg?raw=true');
+    background-image: url('https://github.com/hpypy/gioquatet/blob/main/tet-dong-day.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -86,11 +86,11 @@ body::after {
     height: 100%;
     background: linear-gradient(
         135deg, 
-        rgba(20, 20, 20, 0.88) 0%, 
-        rgba(40, 10, 10, 0.85) 30%,
-        rgba(60, 15, 15, 0.82) 50%,
-        rgba(40, 10, 10, 0.85) 70%,
-        rgba(20, 20, 20, 0.88) 100%
+        rgba(139, 0, 0, 0.92) 0%, 
+        rgba(160, 16, 16, 0.88) 30%,
+        rgba(185, 28, 28, 0.85) 50%,
+        rgba(160, 16, 16, 0.88) 70%,
+        rgba(139, 0, 0, 0.92) 100%
     );
     z-index: 1;
 }
@@ -103,8 +103,8 @@ body::after {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(218, 165, 32, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.06) 0%, transparent 40%);
     animation: luxuryShimmer 10s ease-in-out infinite;
     z-index: 1;
 }
@@ -163,20 +163,17 @@ body::after {
     margin: 0;
     line-height: 1.2;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffd700;
 }
 
 .header-brand p {
     font-size: 0.9rem;
-    color: rgba(218, 165, 32, 0.9);
+    color: #d4af37;
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 0.5rem;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -244,9 +241,9 @@ body::after {
     font-weight: 600;
     letter-spacing: 2px;
     opacity: 1;
-    color: #d4af37;
+    color: #ffd700;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .header-banner h2 {
@@ -255,8 +252,9 @@ body::after {
     margin: 1rem 0 0.7rem 0;
     line-height: 1.7;
     letter-spacing: 0.5px;
-    font-family: 'Georgia', serif;
+    font-family: 'Segoe UI', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 .header-banner p {
@@ -265,8 +263,9 @@ body::after {
     font-size: 1.5rem;
     line-height: 1.7;
     letter-spacing: 0.5px;
-    font-family: 'Georgia', serif;
+    font-family: 'Segoe UI', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 /* Features */
@@ -322,7 +321,7 @@ body::after {
     text-transform: uppercase;
     position: relative;
     animation: titleFadeIn 1s ease-out;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 @keyframes titleFadeIn {
@@ -508,7 +507,7 @@ body::after {
     color: #1a1a1a;
     margin-bottom: 0.8rem;
     letter-spacing: 0.5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .product-description {
@@ -518,21 +517,17 @@ body::after {
     line-height: 1.7;
     flex-grow: 1;
     min-height: 4.8rem;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .product-price {
     font-size: 1.8rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #8b0000 0%, #b91c1c 50%, #8b0000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #8b0000;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
     margin-top: auto;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 0 2px 4px rgba(139, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .btn-order {
@@ -635,7 +630,7 @@ body::after {
     margin-bottom: 2rem;
     color: #1a1a1a;
     font-weight: 600;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Segoe UI', sans-serif;
     text-align: center;
 }
 
@@ -651,7 +646,7 @@ body::after {
     padding-left: 2rem;
     position: relative;
     font-size: 1.05rem;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .policy-list li::before {
@@ -715,7 +710,7 @@ body::after {
     font-size: 1.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .policy-box ul {
@@ -726,7 +721,7 @@ body::after {
     margin: 1rem 0;
     color: #3a3a3a;
     line-height: 1.8;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
     font-size: 1.05rem;
 }
 
@@ -734,14 +729,11 @@ body::after {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    background: linear-gradient(135deg, #8b0000 0%, #b91c1c 50%, #8b0000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #8b0000;
     margin-top: 3rem;
     letter-spacing: 1px;
     line-height: 2;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* Footer */
@@ -771,7 +763,7 @@ body::after {
     margin: 0.8rem 0;
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
     position: relative;
     z-index: 1;
 }
