@@ -133,7 +133,7 @@ function renderProducts() {
                 <div class="product-price">${product.price} ₫</div>
                 <button class="btn-order" onclick="orderProduct(${product.id})">
                     <i class="fas fa-shopping-cart"></i>
-                    Đặt Qua Zalo
+                    Đặt Qua Fanpage
                 </button>
             </div>
         `;
