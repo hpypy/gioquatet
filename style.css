@@ -58,13 +58,17 @@ body::after {
     z-index: 2;
 }
 
-/* Header - Màu đỏ nổi bật */
+/* Header - Màu đỏ sang trọng */
 .header {
-    background: linear-gradient(135deg, #c41e3a 0%, #dc143c 50%, #c41e3a 100%);
+    background: linear-gradient(135deg, #8B0000 0%, #A52A2A 50%, #8B0000 100%);
     color: white;
     padding: 1.5rem 0;
-    box-shadow: 0 4px 20px rgba(139, 0, 0, 0.4);
-    border-bottom: 3px solid #ffd700;
+    box-shadow: 
+        0 4px 20px rgba(139, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 215, 0, 0.3),
+        inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #DAA520;
+    border-bottom: 4px solid #FFD700;
     position: relative;
     overflow: hidden;
 }
@@ -76,7 +80,15 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 215, 0, 0.15) 0%, transparent 50%);
+    background: 
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 50px,
+            rgba(255, 215, 0, 0.03) 50px,
+            rgba(255, 215, 0, 0.03) 51px
+        ),
+        radial-gradient(circle at 30% 50%, rgba(255, 215, 0, 0.15) 0%, transparent 50%);
     animation: luxuryShimmer 10s ease-in-out infinite;
     z-index: 1;
 }
@@ -192,16 +204,20 @@ body::after {
 }
 
 .header-banner {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     padding: 2rem 2.5rem;
     border-radius: 12px;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(218, 165, 32, 0.3);
-    border-left: 4px solid #d4af37;
+    border: 2px solid rgba(218, 165, 32, 0.5);
+    border-left: 5px solid #FFD700;
+    border-right: 5px solid #FFD700;
     margin-top: 2rem;
     position: relative;
     z-index: 2;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 215, 0, 0.2),
+        0 0 20px rgba(255, 215, 0, 0.1);
 }
 
 .banner-year {
@@ -352,7 +368,8 @@ body::after {
         0 2px 8px rgba(0, 0, 0, 0.04),
         inset 0 1px 0 rgba(255, 255, 255, 0.9);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(218, 165, 32, 0.15);
+    border: 3px solid transparent;
+    background-clip: padding-box;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -362,29 +379,45 @@ body::after {
 .product-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(218, 165, 32, 0.03) 0%, rgba(184, 134, 11, 0.02) 100%);
-    opacity: 0;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, 
+        #8B0000 0%, 
+        #FFD700 25%, 
+        #8B0000 50%, 
+        #FFD700 75%, 
+        #8B0000 100%);
+    border-radius: 16px;
+    z-index: -1;
+    opacity: 0.6;
     transition: opacity 0.5s ease;
-    pointer-events: none;
-    z-index: 1;
 }
 
 .product-card::after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, 
+        #FFD700 0%, 
+        #FFA500 25%,
+        #FFD700 50%, 
+        #FFA500 75%,
+        #FFD700 100%);
     border-radius: 16px;
     opacity: 0;
     z-index: -1;
     transition: opacity 0.5s ease;
+    animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
 }
 
 .product-card:hover::before {
@@ -392,7 +425,7 @@ body::after {
 }
 
 .product-card:hover::after {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .product-card:hover {
@@ -500,10 +533,10 @@ body::after {
 
 .btn-order {
     width: 100%;
-    background: linear-gradient(135deg, #c41e3a 0%, #dc143c 50%, #c41e3a 100%);
-    color: #ffd700;
+    background: linear-gradient(135deg, #8B0000 0%, #A52A2A 50%, #8B0000 100%);
+    color: #FFD700;
     padding: 1rem;
-    border: 2px solid #d4af37;
+    border: 3px solid #FFD700;
     border-radius: 8px;
     font-weight: 700;
     cursor: pointer;
@@ -518,7 +551,10 @@ body::after {
     overflow: hidden;
     text-transform: uppercase;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    box-shadow: 0 4px 15px rgba(196, 30, 58, 0.4);
+    box-shadow: 
+        0 4px 15px rgba(139, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 215, 0, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn-order::before {
@@ -557,10 +593,11 @@ body::after {
 .btn-order:hover {
     transform: translateY(-3px);
     box-shadow: 
-        0 6px 25px rgba(196, 30, 58, 0.6),
-        0 0 30px rgba(255, 215, 0, 0.3);
-    background: linear-gradient(135deg, #dc143c 0%, #ff1744 50%, #dc143c 100%);
-    border-color: #f4d03f;
+        0 6px 25px rgba(139, 0, 0, 0.7),
+        0 0 30px rgba(255, 215, 0, 0.5),
+        inset 0 1px 0 rgba(255, 215, 0, 0.5);
+    background: linear-gradient(135deg, #A52A2A 0%, #CD5C5C 50%, #A52A2A 100%);
+    border-color: #FFA500;
     color: #fff;
 }
 
@@ -568,9 +605,12 @@ body::after {
 .policy-section {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 248, 243, 0.95) 100%);
     padding: 5rem 0;
-    border-top: 2px solid rgba(218, 165, 32, 0.2);
+    border-top: 4px solid #8B0000;
+    border-bottom: 4px solid #FFD700;
     position: relative;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 4px 0 rgba(218, 165, 32, 0.3);
 }
 
 .policy-section::before {
