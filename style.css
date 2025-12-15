@@ -54,8 +54,8 @@ body {
 }
 
 .btn-contact {
-    background: #eab308;
-    color: #7c2d12;
+    background: #1877f2;
+    color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     font-weight: bold;
@@ -68,7 +68,7 @@ body {
 }
 
 .btn-contact:hover {
-    background: #ca8a04;
+    background: #145dbf;
 }
 
 .header-banner {
@@ -234,8 +234,8 @@ body {
 
 .btn-order {
     width: 100%;
-    background: #eab308;
-    color: #7c2d12;
+    background: #1877f2;
+    color: white;
     padding: 0.75rem;
     border: none;
     border-radius: 0.5rem;
@@ -249,7 +249,7 @@ body {
 }
 
 .btn-order:hover {
-    background: #ca8a04;
+    background: #145dbf;
 }
 
 /* Policy Section */
