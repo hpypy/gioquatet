@@ -6,8 +6,8 @@ const products = [
         description: 'Rượu Hoa quả, Bánh Lance dài, Bánh dứa Pineapple, Kẹo dừa phủ, Nho Khô ăn',
         price: '399.000',
         images: [
-            'images/0ba33fd3-c2de-4a6c-94e8-e33b36a287d0.jif',
-            'images/0e230422-1a3a-4782-b1da-bd51f727b1c5.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/0ba33fd3-c2de-4a6c-94e8-e33b36a287d0.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/0e230422-1a3a-4782-b1da-bd51f727b1c5.jfif'
         ]
     },
     {
@@ -16,8 +16,8 @@ const products = [
         description: 'Rượu Vang Regalis, Trà Lamour, Cafe Mallorie, Bánh hạnh nhân George, Hộp HPNY',
         price: '449.000',
         images: [
-            'images/1942cc55-c6b5-419a-8c5d-b3bdf7ecb4be.jif',
-            'images/1b11c47b-eecf-4051-b20c-f49a39d314d0.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/1942cc55-c6b5-419a-8c5d-b3bdf7ecb4be.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/1b11c47b-eecf-4051-b20c-f49a39d314d0.jfif'
         ]
     },
     {
@@ -26,8 +26,8 @@ const products = [
         description: 'Rượu Materia, Bánh Marine, Nho Raisins, Trà Lamour, Socola Jinkeli, Kẹo ngậm Đức',
         price: '479.000',
         images: [
-            'images/21de12cf-2f10-41ae-9097-11694e8d6e8c.jif',
-            'images/2267ab65-7705-4b0b-a318-c22c81e47249.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/21de12cf-2f10-41ae-9097-11694e8d6e8c.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/2267ab65-7705-4b0b-a318-c22c81e47249.jfif'
         ]
     },
     {
@@ -36,8 +36,8 @@ const products = [
         description: 'Rượu vang Pantera-Regal, Cà phê Mallorie/Levant Classic, Bánh quy M Blance, Cracker Flory, Hũ Táo Đỏ, Trà M Lamour',
         price: '549.000',
         images: [
-            'images/23663636-43dd-4d83-a5f3-7f15e0af403f.jif',
-            'images/245a5221-7aba-431e-86fd-c9ec75792772.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/23663636-43dd-4d83-a5f3-7f15e0af403f.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/245a5221-7aba-431e-86fd-c9ec75792772.jfif'
         ]
     },
     {
@@ -46,8 +46,8 @@ const products = [
         description: 'Bánh quy English lớn, King Piere, Trà thảo mộc Madeline, Bánh kẹp kem Ritaz, Scl Farris giấy, Bánh que Eudora, Nho raisin',
         price: '549.000',
         images: [
-            'images/26bc069a-b40b-4a50-9ce9-0e91ba387a9d.jif',
-            'images/398b51a0-9178-4352-a958-5cfde93396ca.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/26bc069a-b40b-4a50-9ce9-0e91ba387a9d.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/398b51a0-9178-4352-a958-5cfde93396ca.jfif'
         ]
     },
     {
@@ -56,8 +56,8 @@ const products = [
         description: 'Hộp Tết cao cấp kèm túi giấy, CF Levant Gold, Kẹo Bonart túi tiền thiếc, Kenju nhí hộp thiếc, Nho Raissin, SCL Faris 2 tầng, Vang Harley',
         price: '849.000',
         images: [
-            'images/3cfb65a3-2711-4b73-8497-a5a49094f3fd.jif',
-            'images/45065929-b2be-4388-9b8d-4cdf5b130f18.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/3cfb65a3-2711-4b73-8497-a5a49094f3fd.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/45065929-b2be-4388-9b8d-4cdf5b130f18.jfif'
         ]
     },
     {
@@ -66,8 +66,8 @@ const products = [
         description: 'Rượu Ballantines 750ml, Bánh Kenju hộp thiếc, Cafe 3in1 Mallorie, Kẹo mận hộp sò, Bánh quế Racob, Hộp quà ép kim mở cánh 36x36x10cm',
         price: '1.159.000',
         images: [
-            'images/46a1f322-ef38-43f8-95bb-71ec9edc138e.jif',
-            'images/509b4bba-3c07-481f-8476-009d9c24b144.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/46a1f322-ef38-43f8-95bb-71ec9edc138e.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/509b4bba-3c07-481f-8476-009d9c24b144.jfif'
         ]
     },
     {
@@ -76,8 +76,8 @@ const products = [
         description: 'Rượu Ballentina, Hộp điều nguyên vị, Cafe Malore, Socola 16 viên, Bánh Rita, Kẹo vỏ sò Paige',
         price: '1.199.000',
         images: [
-            'images/6bf583f0-b068-47da-89dd-89dcad0f76bf.jif',
-            'images/99c6f642-9a82-46cc-92bc-0a98898a62a4.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/6bf583f0-b068-47da-89dd-89dcad0f76bf.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/99c6f642-9a82-46cc-92bc-0a98898a62a4.jfif'
         ]
     },
     {
@@ -86,8 +86,8 @@ const products = [
         description: 'Rượu vang Ý Motara, Bánh dứa Pineapple Thái Lan, Bánh quy King Piere, Cafe Levant Gold, Trà Nga Richard, Kẹo Toffee, Kẹo Paiger vị Mận, Bánh quế Ritaz lon, Socola Faris hoa Hồng, Giỏ da tim cao cấp',
         price: '1.399.000',
         images: [
-            'images/a2aa4cbe-1ee1-409e-afdb-2125febf0e58.jif',
-            'images/aa0c7acd-59a5-4348-b821-716069dbb79a.jif'
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/a2aa4cbe-1ee1-409e-afdb-2125febf0e58.jfif',
+            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/aa0c7acd-59a5-4348-b821-716069dbb79a.jfif'
         ]
     }
 ];
