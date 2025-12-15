@@ -181,10 +181,11 @@ body::before {
 }
 
 .header-banner p {
-    font-weight: 400;
+    font-weight: 500;
     opacity: 0.95;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 /* Features */
