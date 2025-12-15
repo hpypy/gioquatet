@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tết An Khang - Tết Đoàn Viên</title>
+    <meta name="description" content="Giỏ quà Tết từ 399k - Mẫu mã đa dạng, phối màu đẹp, phù hợp biếu người thân, đối tác, khách hàng">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-brand">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h1>Tết An Khang</h1>
+                        <p>Tết Đoàn Viên</p>
+                    </div>
+                </div>
+                <a href="https://zalo.me/" target="_blank" class="btn-contact">
+                    <i class="fas fa-phone"></i>
+                    Liên Hệ Zalo
+                </a>
+            </div>
+            <div class="header-banner">
+                <p class="banner-year">🌸 Tết Ất Tỵ 2025</p>
+                <h2>Giỏ quà Tết từ 399k - Mẫu mã đa dạng, phôi màu đẹp, phù hợp</h2>
+                <p>biếu người thân, đối tác, khách hàng.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="container">
+            <div class="features-list">
+                <div class="feature-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Giao hàng toàn quốc</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-file-invoice"></i>
+                    <span>Xuất VAT đầy đủ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </main>
+
+    <!-- Policy Section -->
+    <section class="policy-section">
+        <div class="container">
+            <h2 class="section-title">Chính Sách Bán Hàng</h2>
+            <div class="policy-content">
+                <p class="policy-intro">🌸 <strong>GIỎ QUÀ TẾT 2025 – ĐỦ MỌI NHU CẦU BIẾU TẶNG</strong></p>
+                
+                <ul class="policy-list">
+                    <li>🎁 Mẫu mã đa dạng, phối màu đẹp, form quà chắc tay – bắt mắt</li>
+                    <li>🍬 Sản phẩm chọn lọc kỹ, phù hợp biếu người thân – đối tác – khách hàng</li>
+                    <li>🧾 Hóa đơn đầy đủ, xuất HĐ VAT cho doanh nghiệp & cá nhân</li>
+                    <li>💼 Nhận lên set theo yêu cầu riêng, phù hợp mọi quy mô doanh nghiệp</li>
+                </ul>
+
+                <div class="policy-box price-box">
+                    <p class="box-title">👉 Phân khúc giá linh hoạt:</p>
+                    <p>Từ 399k/giỏ – trải đều từ bình dân – trung cấp – cao cấp</p>
+                    <p>📌 Dù ngân sách bao nhiêu bên em cũng có phương án phù hợp</p>
+                </div>
+
+                <div class="policy-box quote-box">
+                    <p class="box-title">CÁCH BÁO GIÁ</p>
+                    <ul>
+                        <li>✔ Chỉ cần gửi mẫu tham khảo hoặc ngân sách dự kiến</li>
+                        <li>✔ Bên em sẽ tư vấn & báo giá nhanh gọn</li>
+                        <li>✔ Giá niêm yết chưa bao gồm phí ship (nếu có)</li>
+                        <li>✔ VAT +10% theo quy định</li>
+                    </ul>
+                </div>
+
+                <p class="policy-footer">
+                    🧧 Tết là để trao nhau điều tốt lành<br>
+                    việc chọn quà cứ để em lo 🧧
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>🧧 Chúc Mừng Năm Mới - Vạn Sự Như Ý 🧧</p>
+            <p>© 2025 Tết An Khang - Tết Đoàn Viên</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="">
+                <button class="modal-nav modal-prev" onclick="prevImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-nav modal-next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="modal-dots" id="modalDots"></div>
+            </div>
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-price" id="modalPrice"></div>
+                <button class="btn-order">
+                    <i class="fas fa-shopping-cart"></i>
+                    Đặt Qua Zalo Ngay
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
