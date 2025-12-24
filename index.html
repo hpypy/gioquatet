@@ -49,11 +49,76 @@
         </div>
     </div>
 
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="container">
+            <h3 class="filter-title">
+                <i class="fas fa-filter"></i>
+                Lọc Sản Phẩm
+            </h3>
+            <div class="filters">
+                <!-- Price Filter -->
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Khoảng Giá
+                    </label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter-type="price" data-filter-value="all">
+                            Tất cả
+                        </button>
+                        <button class="filter-btn" data-filter-type="price" data-filter-value="under500">
+                            Dưới 500k
+                        </button>
+                        <button class="filter-btn" data-filter-type="price" data-filter-value="500-1000">
+                            500k - 1 triệu
+                        </button>
+                        <button class="filter-btn" data-filter-type="price" data-filter-value="1000-2000">
+                            1 - 2 triệu
+                        </button>
+                        <button class="filter-btn" data-filter-type="price" data-filter-value="over2000">
+                            Trên 2 triệu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Alcohol Filter -->
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <i class="fas fa-wine-bottle"></i>
+                        Rượu
+                    </label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter-type="alcohol" data-filter-value="all">
+                            Tất cả
+                        </button>
+                        <button class="filter-btn" data-filter-type="alcohol" data-filter-value="true">
+                            Có rượu
+                        </button>
+                        <button class="filter-btn" data-filter-type="alcohol" data-filter-value="false">
+                            Không có rượu
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Counter -->
+            <div class="filter-results">
+                <span id="resultsCount">Đang tải...</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Products -->
     <main class="main-content">
         <div class="container">
             <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
-            <div class="products-grid" id="productsGrid"></div>
+            <div class="products-grid" id="productsGrid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Đang tải sản phẩm...</p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -123,7 +188,7 @@
                 <h2 id="modalTitle"></h2>
                 <p id="modalDescription"></p>
                 <div class="modal-price" id="modalPrice"></div>
-                <button class="btn-order">
+                <button class="btn-order" onclick="orderFromModal()">
                     <i class="fab fa-facebook-messenger"></i>
                     Liên Hệ Facebook Ngay
                 </button>
