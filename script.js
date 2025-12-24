@@ -1,113 +1,143 @@
-// Products data
-const products = [
-    {
-        id: 1,
-        name: 'Set Yêu Thương',
-        description: 'Rượu Hoa quả, Bánh Lance dài, Bánh dứa Pineapple, Kẹo dừa phủ, Nho Khô ăn',
-        price: '399.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/0ba33fd3-c2de-4a6c-94e8-e33b36a287d0.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/0e230422-1a3a-4782-b1da-bd51f727b1c5.jfif'
-        ]
-    },
-    {
-        id: 2,
-        name: 'Set BB119 - Ngon Bổ Rẻ',
-        description: 'Rượu Vang Regalis, Trà Lamour, Cafe Mallorie, Bánh hạnh nhân George, Hộp HPNY',
-        price: '449.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/1942cc55-c6b5-419a-8c5d-b3bdf7ecb4be.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/1b11c47b-eecf-4051-b20c-f49a39d314d0.jfif'
-        ]
-    },
-    {
-        id: 3,
-        name: 'Set BB129 - Hộp HPNY Đỏ',
-        description: 'Rượu Materia, Bánh Marine, Nho Raisins, Trà Lamour, Socola Jinkeli, Kẹo ngậm Đức',
-        price: '479.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/21de12cf-2f10-41ae-9097-11694e8d6e8c.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/2267ab65-7705-4b0b-a318-c22c81e47249.jfif'
-        ]
-    },
-    {
-        id: 4,
-        name: 'Set BB169',
-        description: 'Rượu vang Pantera-Regal, Cà phê Mallorie/Levant Classic, Bánh quy M Blance, Cracker Flory, Hũ Táo Đỏ, Trà M Lamour',
-        price: '549.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/23663636-43dd-4d83-a5f3-7f15e0af403f.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/245a5221-7aba-431e-86fd-c9ec75792772.jfif'
-        ]
-    },
-    {
-        id: 5,
-        name: 'Trụ Tròn Galaxy BB160',
-        description: 'Bánh quy English lớn, King Piere, Trà thảo mộc Madeline, Bánh kẹp kem Ritaz, Scl Farris giấy, Bánh que Eudora, Nho raisin',
-        price: '549.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/26bc069a-b40b-4a50-9ce9-0e91ba387a9d.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/398b51a0-9178-4352-a958-5cfde93396ca.jfif'
-        ]
-    },
-    {
-        id: 6,
-        name: 'Set BB027 - Mã Đáo Thành Công',
-        description: 'Hộp Tết cao cấp kèm túi giấy, CF Levant Gold, Kẹo Bonart túi tiền thiếc, Kenju nhí hộp thiếc, Nho Raissin, SCL Faris 2 tầng, Vang Harley',
-        price: '849.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/3cfb65a3-2711-4b73-8497-a5a49094f3fd.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/45065929-b2be-4388-9b8d-4cdf5b130f18.jfif'
-        ]
-    },
-    {
-        id: 7,
-        name: 'Set BB159',
-        description: 'Rượu Ballantines 750ml, Bánh Kenju hộp thiếc, Cafe 3in1 Mallorie, Kẹo mận hộp sò, Bánh quế Racob, Hộp quà ép kim mở cánh 36x36x10cm',
-        price: '1.159.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/46a1f322-ef38-43f8-95bb-71ec9edc138e.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/509b4bba-3c07-481f-8476-009d9c24b144.jfif'
-        ]
-    },
-    {
-        id: 8,
-        name: 'Set BB116 - Lam Cúc',
-        description: 'Rượu Ballentina, Hộp điều nguyên vị, Cafe Malore, Socola 16 viên, Bánh Rita, Kẹo vỏ sò Paige',
-        price: '1.199.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/6bf583f0-b068-47da-89dd-89dcad0f76bf.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/99c6f642-9a82-46cc-92bc-0a98898a62a4.jfif'
-        ]
-    },
-    {
-        id: 9,
-        name: 'Trụ Da Tim Gold',
-        description: 'Rượu vang Ý Motara, Bánh dứa Pineapple Thái Lan, Bánh quy King Piere, Cafe Levant Gold, Trà Nga Richard, Kẹo Toffee, Kẹo Paiger vị Mận, Bánh quế Ritaz lon, Socola Faris hoa Hồng, Giỏ da tim cao cấp',
-        price: '1.399.000',
-        images: [
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/a2aa4cbe-1ee1-409e-afdb-2125febf0e58.jfif',
-            'https://raw.githubusercontent.com/hpypy/gioquatet/refs/heads/main/aa0c7acd-59a5-4348-b821-716069dbb79a.jfif'
-        ]
-    }
-];
-
 // State
+let allProducts = [];
+let filteredProducts = [];
 let currentProduct = null;
 let currentImageIndex = 0;
 let slideIntervals = {};
 
+// Filter state
+let currentFilters = {
+    price: 'all',
+    alcohol: 'all'
+};
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
-    initSlideshow();
+    loadProducts();
+    setupFilterListeners();
 });
+
+// Load products from JSON
+async function loadProducts() {
+    try {
+        const response = await fetch('products.json');
+        allProducts = await response.json();
+        filteredProducts = [...allProducts];
+        renderProducts();
+        updateResultsCount();
+        initSlideshow();
+    } catch (error) {
+        console.error('Lỗi khi tải sản phẩm:', error);
+        document.getElementById('productsGrid').innerHTML = `
+            <div class="error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Không thể tải sản phẩm. Vui lòng thử lại sau.</p>
+            </div>
+        `;
+    }
+}
+
+// Setup filter listeners
+function setupFilterListeners() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filterType = btn.dataset.filterType;
+            const filterValue = btn.dataset.filterValue;
+            
+            // Update active state
+            document.querySelectorAll(`[data-filter-type="${filterType}"]`).forEach(b => {
+                b.classList.remove('active');
+            });
+            btn.classList.add('active');
+            
+            // Update filter state
+            currentFilters[filterType] = filterValue;
+            
+            // Apply filters
+            applyFilters();
+        });
+    });
+}
+
+// Apply filters
+function applyFilters() {
+    filteredProducts = allProducts.filter(product => {
+        // Price filter
+        let priceMatch = true;
+        if (currentFilters.price !== 'all') {
+            const price = product.price;
+            switch (currentFilters.price) {
+                case 'under500':
+                    priceMatch = price < 500000;
+                    break;
+                case '500-1000':
+                    priceMatch = price >= 500000 && price < 1000000;
+                    break;
+                case '1000-2000':
+                    priceMatch = price >= 1000000 && price < 2000000;
+                    break;
+                case 'over2000':
+                    priceMatch = price >= 2000000;
+                    break;
+            }
+        }
+        
+        // Alcohol filter
+        let alcoholMatch = true;
+        if (currentFilters.alcohol !== 'all') {
+            alcoholMatch = product.hasAlcohol.toString() === currentFilters.alcohol;
+        }
+        
+        return priceMatch && alcoholMatch;
+    });
+    
+    // Clear existing slideshow intervals
+    Object.keys(slideIntervals).forEach(id => {
+        clearInterval(slideIntervals[id]);
+    });
+    slideIntervals = {};
+    
+    // Re-render products
+    renderProducts();
+    updateResultsCount();
+    initSlideshow();
+}
+
+// Update results count
+function updateResultsCount() {
+    const count = filteredProducts.length;
+    const resultsEl = document.getElementById('resultsCount');
+    resultsEl.textContent = `Tìm thấy ${count} sản phẩm`;
+}
+
+// Format price
+function formatPrice(price) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
 
 // Render products
 function renderProducts() {
     const grid = document.getElementById('productsGrid');
     
-    products.forEach(product => {
+    if (filteredProducts.length === 0) {
+        grid.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <p>Không tìm thấy sản phẩm phù hợp</p>
+                <button class="btn-reset-filter" onclick="resetFilters()">
+                    <i class="fas fa-redo"></i>
+                    Đặt lại bộ lọc
+                </button>
+            </div>
+        `;
+        return;
+    }
+    
+    grid.innerHTML = '';
+    
+    filteredProducts.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
         
@@ -126,11 +156,12 @@ function renderProducts() {
                         <div class="dot ${idx === 0 ? 'active' : ''}" data-product-id="${product.id}" data-index="${idx}"></div>
                     `).join('')}
                 </div>
+                ${product.hasAlcohol ? '<div class="alcohol-badge"><i class="fas fa-wine-bottle"></i> Có rượu</div>' : ''}
             </div>
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
-                <div class="product-price">${product.price} ₫</div>
+                <div class="product-price">${formatPrice(product.price)} ₫</div>
                 <button class="btn-order" onclick="orderProduct(${product.id})">
                     <i class="fas fa-shopping-cart"></i>
                     Đặt Qua Fanpage
@@ -142,12 +173,32 @@ function renderProducts() {
     });
 }
 
+// Reset filters
+function resetFilters() {
+    currentFilters = {
+        price: 'all',
+        alcohol: 'all'
+    };
+    
+    // Reset all filter buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.dataset.filterValue === 'all') {
+            btn.classList.add('active');
+        }
+    });
+    
+    applyFilters();
+}
+
 // Initialize slideshow
 function initSlideshow() {
-    products.forEach(product => {
+    filteredProducts.forEach(product => {
+        if (product.images.length <= 1) return;
+        
         let currentIndex = 0;
         slideIntervals[product.id] = setInterval(() => {
-            currentIndex = currentIndex === 1 ? 0 : 1;
+            currentIndex = (currentIndex + 1) % product.images.length;
             updateProductImages(product.id, currentIndex);
         }, 3000);
     });
@@ -179,7 +230,7 @@ function updateProductImages(productId, index) {
 
 // Open modal
 function openModal(productId, imageIndex = 0) {
-    currentProduct = products.find(p => p.id === productId);
+    currentProduct = allProducts.find(p => p.id === productId);
     currentImageIndex = imageIndex;
     
     const modal = document.getElementById('modal');
@@ -192,7 +243,7 @@ function openModal(productId, imageIndex = 0) {
     modalImage.src = currentProduct.images[currentImageIndex];
     modalTitle.textContent = currentProduct.name;
     modalDescription.textContent = currentProduct.description;
-    modalPrice.textContent = currentProduct.price + ' ₫';
+    modalPrice.textContent = formatPrice(currentProduct.price) + ' ₫';
     
     // Create dots
     modalDots.innerHTML = currentProduct.images.map((_, idx) => `
@@ -201,12 +252,14 @@ function openModal(productId, imageIndex = 0) {
     `).join('');
     
     modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 // Close modal
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.classList.remove('active');
+    document.body.style.overflow = '';
     currentProduct = null;
     currentImageIndex = 0;
 }
@@ -249,15 +302,35 @@ function updateModalImage() {
 
 // Order product
 function orderProduct(productId) {
-    const product = products.find(p => p.id === productId);
-    const message = `Xin chào! Tôi muốn đặt ${product.name} - Giá: ${product.price}₫`;
+    const product = allProducts.find(p => p.id === productId);
     const fbUrl = `https://www.facebook.com/profile.php?id=61584802095138`;
     window.open(fbUrl, '_blank');
+}
+
+// Order from modal
+function orderFromModal() {
+    if (currentProduct) {
+        orderProduct(currentProduct.id);
+    }
 }
 
 // Close modal when clicking outside
 document.getElementById('modal').addEventListener('click', (e) => {
     if (e.target.id === 'modal') {
         closeModal();
+    }
+});
+
+// Keyboard navigation for modal
+document.addEventListener('keydown', (e) => {
+    const modal = document.getElementById('modal');
+    if (!modal.classList.contains('active')) return;
+    
+    if (e.key === 'Escape') {
+        closeModal();
+    } else if (e.key === 'ArrowLeft') {
+        prevImage();
+    } else if (e.key === 'ArrowRight') {
+        nextImage();
     }
 });
